@@ -12,7 +12,6 @@ lin_reg_mpg <- lm(
   )
 
 # save linear regression as text for later use, if necessary
-lin_reg_mpg
 sink('outputs/lin_reg_mpg.txt')
 print(lin_reg_mpg)
 sink()
@@ -74,3 +73,29 @@ write.table(
   row.names = TRUE, 
   col.names = NA
 )
+
+### 
+# 3. T-Tests on Suspension Coils
+
+# grab the population mean for PSI
+population_mean <- 1500 # the deliverable requirements state this should be 1500, but this is *not* the actual mean
+
+# perform T-Test on PSI data against the population mean
+sus_coil_t_test <- t.test(suspension_coil_data$PSI, mu=population_mean)
+
+# save T-Test results as text for later use, if needed
+sink('outputs/sus_coil_t_test.txt')
+print(sus_coil_t_test)
+sink()
+
+# loop through each lot, grab the subset from the loaded dataset
+# then perform a t-test and save the results as text
+for (lot in lot_summary$Manufacturing_Lot) {
+  lot_subset <- subset(suspension_coil_data, Manufacturing_Lot==lot)
+  t_test <- t.test(lot_subset$PSI, mu=population_mean)
+  sink(paste('outputs/', lot, '_t_test.txt'))
+  print(t_test)
+  sink()
+} 
+
+
