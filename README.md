@@ -1,5 +1,7 @@
 # MechaCar_Statistical_Analysis
 
+Note: all code blocks are copied from generated text in `MechaCarChallenge.R`, which are sent to the `outputs` directory.
+
 ## Linear Regression to Predict MPG
 
     Call:
