@@ -127,7 +127,7 @@ Our p-value of 0.04168 is below our significance level. We have sufficient evide
 
 For our study, we should concern ourselves with maintenance costs, especially with reliability and dependency in mind. JD Power's annual dependability report can be a North Star for many prospective car buyers. Below are the results of the 2022 dependability study.
 
-![jd_2022_reliability](https://www.jdpower.com/sites/default/files/styles/large/public/image/2022-02/2022010a.JPG?itok=z4MTxG3y) ~Source:\ <https://www.jdpower.com/business/press-releases/2022-us-vehicle-dependability-study>~
+![jd_2022_reliability](https://www.jdpower.com/sites/default/files/styles/large/public/image/2022-02/2022010a.JPG?itok=z4MTxG3y) Source: https://www.jdpower.com/business/press-releases/2022-us-vehicle-dependability-study
 
 For our study, we will group maintenance into mileage buckets, e.g. maintenance that needs to be done every 5k - 10k miles, 10k - 30k miles, 30k - 75k miles, and 75k - 100k miles. We will then assess the cost associated with each of these buckets and determine - for 1, 3, and 5 years of ownership - the cost to maintain a MechaCar vehicle. 
 
